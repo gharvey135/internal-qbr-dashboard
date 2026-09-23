@@ -10,12 +10,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <style>
 :root{
-  --ground:#0A0A0A; --panel:#0D0D0D; --panel-2:#101010; --raise:#151515;
+  --ground:#000000; --panel:#0D0D0D; --panel-2:#101010; --raise:#151515;
   --line:#1E1E1E; --line-2:#292929;
   --ink:#FAFAFA; --ink-2:#A1A1AA; --ink-3:#6E6E76;
   --accent:#16A34A; --accent-dim:#0E2A1A;
   --good:#16A34A; --warn:#D97706; --bad:#DC2626; --info:#2563EB;
   --c1:#16A34A; --c2:#2563EB; --c3:#D97706; --c4:#9333EA;
+  --fw:#651DFF;
   --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
@@ -26,6 +27,9 @@ a{color:inherit}
 /* ---- sidebar ---- */
 .side{background:var(--panel-2);border-right:1px solid var(--line);display:flex;flex-direction:column;position:sticky;top:env(safe-area-inset-top,0px);align-self:start;max-height:100vh;overflow-y:auto}
 .side .top{padding:16px 16px 6px;border-bottom:1px solid var(--line)}
+.fw{display:flex;align-items:center;gap:8px;padding-bottom:11px;margin-bottom:11px;border-bottom:1px solid var(--line)}
+.fw i{width:18px;height:18px;border-radius:5px;background:var(--fw);flex:none}
+.fw span{font-size:12.5px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
 .brand b{display:block;font-size:13.5px;font-weight:700;letter-spacing:-.015em}
 .brand span{font-size:10.5px;color:var(--ink-3);font-family:var(--mono)}
 .side .mid{padding:14px 12px;display:flex;flex-direction:column;gap:18px;flex:1}
@@ -185,7 +189,7 @@ svg.bar.wide,#ch-plan svg{max-width:1080px}
 </style>
 <div class="shell">
  <aside class="side">
-  <div class="top"><div class="brand"><b>Northstar Retail Group</b><span>Internal QBR · Deliverable 1</span></div></div>
+  <div class="top"><div class="fw"><i></i><span>Fireworks AI</span></div><div class="brand"><b>Northstar Retail Group</b><span>Internal QBR · Deliverable 1</span></div></div>
   <div class="mid">
     <div>
       <div class="grp">Internal QBR Dashboard</div>
